@@ -20,13 +20,24 @@ venv/
 build/
 dist/
 *.log
+logs/
+tensorboard/
 
 # Jupyter / notebooks
 .ipynb_checkpoints/
 
 # Data (simulator recordings)
-data/IMG/
-data/driving_log.csv
+data/
+!data/README.md
 
-# Plots / generated figures (optional)
+# Models / weights / checkpoints
+models/
+*.h5
+*.hdf5
+*.pb
+*.ckpt
+
+# Plots / generated figures
 docs/*.png
+docs/*.jpg
+docs/*.jpeg
